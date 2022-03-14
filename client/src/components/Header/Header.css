@@ -1,0 +1,17 @@
+.nav-dropdown {
+  color: white;
+}
+.nav-item {
+  float: right;
+}
+.nav-logo {
+  height: 40px;
+  width: 40px;
+}
+.nav-brand {
+  display: flex;
+}
+.nav-text {
+  color: white;
+  font-size: 20px;
+}

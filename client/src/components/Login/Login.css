@@ -1,0 +1,57 @@
+.background {
+  background-image: url("../../Media/background.jpg");
+  min-height: 100%;
+  min-width: 100%;
+  position: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.login-card {
+  width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 6px 38px 0 black;
+  margin-top: 3%;
+  border: 1px solid black;
+}
+.login-title {
+  text-align: center;
+  font-size: 30px;
+}
+.user {
+  height: 60px;
+  width: 60px;
+  color: rgb(245, 69, 25);
+}
+.input-field {
+  margin-left: 6%;
+  margin-right: 6%;
+}
+.button {
+  background-color: white;
+  width: 130px;
+  margin-left: 30%;
+  height: 50px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  outline: none;
+  border-radius: 20px;
+  border: 2px solid rgb(245, 69, 25);
+  transition: 0.4s;
+  margin-bottom: 6px;
+}
+.button:hover {
+  background-color: rgb(245, 69, 25);
+  color: white;
+}
+.href-link {
+  text-decoration: none;
+  color: black;
+}
+@media screen and (max-width: 450px) {
+  .login-card {
+    width: 350px;
+  }
+}
