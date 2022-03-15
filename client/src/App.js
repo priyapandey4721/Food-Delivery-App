@@ -2,7 +2,8 @@ import React, { Suspense } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ErrorBoundary from "./components/ErrorHandler/ErrorBoundary";
-import Loading from './Media/Loading.gif'
+import Loading from './media/Loading.gif'
+const Dashboard = React.lazy(() => import("./components/Dashboard/Dashboard")) ;
 const Register = React.lazy(() => import ("./components/Register/Register")) ;
 const Login = React.lazy(() => import ("./components/Login/Login")) ;
 const Introduction = React.lazy(() => import ("./components/Introduction/Introduction")) ;
@@ -25,6 +26,7 @@ function App() {
           <Route path="/" element={<Introduction />} /> 
           <Route path="/login" element={<Login/>}/>
           <Route path="/register" element={<Register/>}/>
+          <Route path = "/dashboard" element={<Dashboard/>}/>
           </Routes>
         </BrowserRouter>
       </Suspense>

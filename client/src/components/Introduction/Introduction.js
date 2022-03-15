@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import "./Introduction.css";
-import logo from "../../Media/logo.png";
+import logo from "../../media/logo.png";
 import {useNavigate} from 'react-router'
 function Introduction() {
   const navigate = useNavigate()
