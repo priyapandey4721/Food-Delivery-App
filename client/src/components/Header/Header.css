@@ -1,5 +1,7 @@
 .nav-dropdown {
   color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 .nav-item {
   float: right;
@@ -15,3 +17,10 @@
   color: white;
   font-size: 20px;
 }
+.nav-cart {
+  color: white;
+  font-size: 20px;
+}
+/* .nav-dropdown::after {
+  visibility: hidden;
+} */

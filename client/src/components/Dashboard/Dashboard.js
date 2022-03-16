@@ -57,7 +57,7 @@ function Dashboard() {
           </Card.Footer>
         </Card>
       </CardGroup>
-      <h1>Your Previous Orders </h1>
+      <h1 className="heading1">Your Previous Orders </h1>
     </div>
   );
 }

@@ -35,6 +35,10 @@ router.post(
   "/login",
   UserValidation.validLogin,
   UserControllers.login
+);
+router.get(
+  "/getprofile/:email",
+  UserControllers.getprofile
 )
 
 module.exports = router;

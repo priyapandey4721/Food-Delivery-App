@@ -14,6 +14,9 @@ connectDB();
 const UserRouter = require("./routes/UserRoutes");
 app.use("/api/fooddelivery", UserRouter);
 
+const MenuRouter = require("./routes/MenuRoutes");
+app.use("/api/fooddelivery", MenuRouter)
+
 app.listen(port, (err) => {
   if (err) throw err;
   console.log(`Server is Working on ${port}`);

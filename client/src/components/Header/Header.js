@@ -1,12 +1,23 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { useNavigate } from "react-router";
 import { FaSignInAlt, FaSignOutAlt } from "react-icons/fa";
+import { getProfile } from "../../config/Myservices";
 import { MdAssignment } from "react-icons/md";
+import {BsFillCartPlusFill} from 'react-icons/bs'
 import logo from "../../media/logo.png";
 import "./Header.css";
 function Header() {
   const navigate = useNavigate();
+  let [user, setUser] = useState([]);
+    useEffect(()=>{
+        getProfile(sessionStorage.getItem('user'))
+        .then(res=>{
+            if(res.data.user){
+                setUser(res.data.user);
+            }
+        })
+    },[])
   const logout = () => {
     sessionStorage.clear();
     navigate("/login");
@@ -32,6 +43,9 @@ function Header() {
                   <span className="nav-text" > Menu</span>{" "}
                 </Nav.Link>
             </Nav>
+            <Nav.Link href="/cart">
+                  <span className="nav-cart" >Cart <BsFillCartPlusFill/></span>{" "}
+                </Nav.Link>
             {sessionStorage.getItem("_token") == undefined ? (
               <NavDropdown
                 title=""
@@ -54,8 +68,7 @@ function Header() {
               </NavDropdown>
             ) : (
               <NavDropdown
-                title=""
-                id="navbarScrollingDropdown"
+                title={user.firstname}
                 className="nav-dropdown"
               >
                 <NavDropdown.Item

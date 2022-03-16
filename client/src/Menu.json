@@ -1,0 +1,122 @@
+[
+  {
+    "Name": "Classic Chicken Roll in Naan",
+    "Price": "150",
+    "Image": "https://b.zmtcdn.com/data/dish_photos/3f2/4a6d5e9e293b706a77cfe7833617b3f2.jpg?fit=around|130:130&crop=130:130;*,*"
+  },
+  {
+    "Name": "Veg Schezwan Roll In Naan",
+    "Price": "140",
+    "Image": "https://b.zmtcdn.com/data/dish_photos/d5f/0f9dfca71a48fcfa1b053e1881217d5f.jpg?fit=around|130:130&crop=130:130;*,*"
+  },
+  {
+    "Name": "Tawa Chicken Roll In Naan",
+    "Price": "160",
+    "Image": "https://b.zmtcdn.com/data/dish_photos/6ad/e69ba55a3a230f2549ff6ec65052e6ad.jpg?fit=around|130:130&crop=130:130;*,*"
+  },
+  {
+    "Name": "Veg Cheesy Jalapeño",
+    "Price": "140",
+    "Image": "https://b.zmtcdn.com/data/dish_photos/b18/10ffd8687fe5b7bbc09e27e18fb38b18.jpg?fit=around|130:130&crop=130:130;*,*"
+  },
+  {
+    "Name": "McSpicy Chicken Burger",
+    "Price": "165",
+    "Image": "https://b.zmtcdn.com/data/dish_photos/b46/4d80614e25ce5cba74cbe2670fa93b46.png?fit=around|130:130&crop=130:130;*,*"
+  },
+  {
+    "Name": "American Cheese Supreme - Veg",
+    "Price": "125",
+    "Image": "https://b.zmtcdn.com/data/dish_photos/fae/57d279457dbd8e2070becfb932a79fae.jpg?fit=around|130:130&crop=130:130;*,*"
+  },
+  {
+    "Name": "McVeggie Burger",
+    "Price": "115",
+    "Image": "https://b.zmtcdn.com/data/dish_photos/511/4f4aed59ea6e2df22e23c7f36fcca511.jpg?fit=around|130:130&crop=130:130;*,*"
+  },
+  {
+    "Name": "McChicken Burger",
+    "Price": "120",
+    "Image": "https://b.zmtcdn.com/data/dish_photos/d38/393e496be8ec0d7b6006c4f33869cd38.png?fit=around|130:130&crop=130:130;*,*"
+  },
+  {
+    "Name": "Family Treat BBQ Delight Chicken Pizza Meal",
+    "Price": "670",
+    "Image": "https://b.zmtcdn.com/data/dish_photos/306/4084273933bacd5581d26ccd07244306.jpg?fit=around|130:130&crop=130:130;*,*"
+  },
+  {
+    "Name": "Family Treat Gracy Italian Pizza Meal",
+    "Price": "700",
+    "Image": "https://b.zmtcdn.com/data/dish_photos/942/9f88004447c1321a5ca07d2e14dc3942.jpg?fit=around|130:130&crop=130:130;*,*"
+  },
+  {
+    "Name": "Cheese with Corn Pizza",
+    "Price": "190",
+    "Image": "https://b.zmtcdn.com/data/dish_photos/2bf/d5df8f0fe0923072055f17836e48e2bf.jpg?fit=around|130:130&crop=130:130;*,*"
+  },
+  {
+    "Name": "Hot Chicken Pizza",
+    "Price": "270",
+    "Image": "https://b.zmtcdn.com/data/dish_photos/5d8/8c4e95afa7563d0b591ed001d332a5d8.jpg?fit=around|130:130&crop=130:130;*,*"
+  },
+  {
+    "Name": "Veg Cheese Grilled Sandwich",
+    "Price": "169",
+    "Image": "https://b.zmtcdn.com/data/dish_photos/fd2/89d73d7567b8ba005e0075810bb6bfd2.jpg?fit=around|130:130&crop=130:130;*,*"
+  },
+  {
+    "Name": "Chocolate Toast Sandwich",
+    "Price": "105",
+    "Image": "https://b.zmtcdn.com/data/dish_photos/644/bffbb0be72036e7ff4bbaf9b226db644.jpg?fit=around|130:130&crop=130:130;*,*"
+  },
+  {
+    "Name": "Veg Grilled Sandwich",
+    "Price": "143",
+    "Image": "https://b.zmtcdn.com/data/dish_photos/967/a9ca7eaab1c245af6afe5cee6b37f967.jpg?fit=around|130:130&crop=130:130;*,*"
+  },
+  {
+    "Name": "Paneer Mayo Cheese Grilled Sandwich",
+    "Price": "208",
+    "Image": "https://b.zmtcdn.com/data/dish_photos/b56/8a0287f260729cdd8d75a5c2a70fcb56.jpg?fit=around|130:130&crop=130:130;*,*"
+  },
+  {
+    "Name": "Oreo Cake",
+    "Price": "450",
+    "Image": "https://b.zmtcdn.com/data/dish_photos/043/530d1684def6bf5325c6116c2542c043.jpg?fit=around|130:130&crop=130:130;*,*"
+  },
+  {
+    "Name": "Choco Gooey Cake",
+    "Price": "350",
+    "Image": "https://b.zmtcdn.com/data/dish_photos/829/ed23b238137a60b4bc9be73d423d7829.jpg?fit=around|130:130&crop=130:130;*,*"
+  },
+  {
+    "Name": "Swiss Truffle Cake",
+    "Price": "350",
+    "Image": "https://b.zmtcdn.com/data/dish_photos/3b4/cf11e419deb2fd271a11594be00443b4.jpg?fit=around|130:130&crop=130:130;*,*"
+  },
+  {
+    "Name": "Rasmalai Cake",
+    "Price": "500",
+    "Image": "https://b.zmtcdn.com/data/dish_photos/4a9/43e0815c82a4088bf96ac64884db04a9.jpg?fit=around|130:130&crop=130:130;*,*"
+  },
+  {
+    "Name": "Paneer Tikka Matka Biryani",
+    "Price": "422",
+    "Image": "https://b.zmtcdn.com/data/dish_photos/0f1/ce17a8a1e0ab5ee90787784e36f8f0f1.jpg?fit=around|130:130&crop=130:130;*,*"
+  },
+  {
+    "Name": "Nawabi Paneer Matka Biryani",
+    "Price": "422",
+    "Image": "https://b.zmtcdn.com/data/dish_photos/e10/c8a9df6051dea84a9233d83a6a364e10.jpg?fit=around|130:130&crop=130:130;*,*"
+  },
+  {
+    "Name": "Chicken Tikka Matka Biryani",
+    "Price": "426",
+    "Image": "https://b.zmtcdn.com/data/dish_photos/de2/ee518139da577f117ad3d23c87628de2.jpg?fit=around|130:130&crop=130:130;*,*"
+  },
+  {
+    "Name": "Chicken Dum Matka Biryani",
+    "Price": "418",
+    "Image": "https://b.zmtcdn.com/data/dish_photos/404/a79c3b26cd47b07316590c08703a9404.jpg?fit=around|130:130&crop=130:130;*,*"
+  }
+]

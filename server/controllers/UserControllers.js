@@ -48,6 +48,13 @@ const UserControllers = {
       res.send({err:"User Not Registered"})
     }
   },
+  getprofile:async(req,res)=>{
+    let email = req.params.email;
+    userModel.findOne({email:email},(err,data)=>{
+      if(err) res.json({err:err})
+      res.json({user:data});
+    })
+  }
 };
 module.exports = UserControllers;
 
