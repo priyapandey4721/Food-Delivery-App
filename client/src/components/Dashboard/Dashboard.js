@@ -14,7 +14,7 @@ function Dashboard() {
     }
   return (
     <div className="background">
-      <Header />
+      <Header /><br/>
       <div className="bg-text">
         <h1 className="heading">FOODISM</h1>
         <p>Discover the best food near you! </p>
