@@ -6,5 +6,4 @@ router.use(express.json());
 router.use(express.urlencoded({ extended: true }));
 
 router.get("/getmenu", authenticateToken, MenuControllers.getMenu);
-router.get("/cart/:item/:price/:email",MenuControllers.getcart)
 module.exports = router;

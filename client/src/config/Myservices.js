@@ -20,6 +20,6 @@ export function getMenu() {
   });
 }
 
-export function cartAdd(item,email){
-  return axios.get(`${MAIN_URL}fooddelivery/cart/${item.Name}/${item.Price}/${email}`)
+export function placeOrder(token,grandtotal,cartItems){
+  return axios.post(`${MAIN_URL}fooddelivery/placeorders`,token,grandtotal,cartItems)
 }

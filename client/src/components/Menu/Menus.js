@@ -30,7 +30,7 @@ function Menus() {
         <h2>Menu</h2>
       </Container>
       <Container>
-        <div className="row p-4 justify-content">
+        <div className="row p-4 justify-content-center">
           {loading ? (
             <h1>Loading...</h1>
           ) : error ? (

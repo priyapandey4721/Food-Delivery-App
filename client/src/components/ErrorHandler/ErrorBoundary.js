@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Alert } from "react-bootstrap";
+import "./ErrorBoundary.css";
 class ErrorBoundary extends Component {
   constructor(props) {
     super(props);
@@ -15,7 +17,12 @@ class ErrorBoundary extends Component {
     if (this.state.hasError) {
       return (
         <div className="background">
-          <h1 className="error-message">Something Went Wrong!!!</h1>
+          <div className="error-message">
+            <Alert variant="danger" className="alert">Login is Required !</Alert>
+            <a href="/login">
+              <button className="button">Go Back {"<<"} </button>
+            </a>
+          </div>
         </div>
       );
     }

@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from "react";
+import {useDispatch, useSelector} from "react-redux"
 import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { useNavigate } from "react-router";
 import { FaSignInAlt, FaSignOutAlt } from "react-icons/fa";
@@ -10,6 +11,7 @@ import "./Header.css";
 function Header() {
   const navigate = useNavigate();
   let [user, setUser] = useState([]);
+  const cartstate = useSelector(state=>state.cartReducer)
     useEffect(()=>{
         getProfile(sessionStorage.getItem('user'))
         .then(res=>{
@@ -44,7 +46,7 @@ function Header() {
                 </Nav.Link>
             </Nav>
             <Nav.Link href="/cart">
-                  <span className="nav-cart" >Cart <BsFillCartPlusFill/></span>{" "}
+                  <span className="nav-cart" >Cart {cartstate.cartItems.length} <BsFillCartPlusFill/> </span>{" "}
                 </Nav.Link>
             {sessionStorage.getItem("_token") == undefined ? (
               <NavDropdown

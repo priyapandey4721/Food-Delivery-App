@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { cartAdd } from "../../config/Myservices";
 import { Card, Modal } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
@@ -6,6 +7,7 @@ import { IoAddSharp } from "react-icons/io5";
 import "./Menu.css";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { addToCart } from "../../actions/CartActions";
 toast.configure();
 function Menu({ item }) {
   const email = sessionStorage.getItem("user");
@@ -16,13 +18,12 @@ function Menu({ item }) {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const dispatch = useDispatch();
   const navigate = useNavigate();
-  const addCart = (item) => {
-    //   window.location.reload();
-    cartAdd(item, email).then((res) => {
-      success(res.data.msg);
-    });
-  };
+  const [Quantity,setQuantity] = useState(1)
+  function addCart() {
+    dispatch(addToCart(item, Quantity));
+  }
   return (
     <>
       <Card className="card">
@@ -37,13 +38,25 @@ function Menu({ item }) {
         <Card.Body>
           <Card.Title>{item.Name}</Card.Title>
           <Card.Text>
-            <h5>Rs. {item.Price}</h5>
+            <div className="d-flex">
+            <div className="w-100">
+              <h5>Price  : <br/>Rs. {item.Price}</h5>
+            </div>
+            <div className="">
+              <h5 >Quantity </h5>
+              <select value={Quantity} onChange={(e)=>{setQuantity(e.target.value)}}>
+                {[...Array(10).keys()].map((x, i)=>{
+                  return <option value={i+1}>{i+1}</option>
+                })}
+              </select>
+            </div>
+            </div>
           </Card.Text>
           <button
             className="button"
             variant="primary"
             onClick={() => {
-              addCart(item);
+              addCart();
             }}
           >
             Add <IoAddSharp />

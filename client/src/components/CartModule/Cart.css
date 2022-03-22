@@ -1,26 +1,36 @@
-.error-message {
-  text-align: center;
-  color: red;
-}
 .background {
   background-image: url("../../media/background.jpg");
   min-height: 100%;
   min-width: 100%;
-  position: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.error-message {
-  margin: 0px auto;
-  margin-top: 20%;
-}
-.alert {
-  margin: 0px auto;
-  width: 600px;
-  height: 100px;
-  font-weight: bold;
+.heading {
   font-size: 40px;
+  text-align: center;
+}
+.display {
+  float: left;
+  margin: 10px;
+}
+.minus {
+  color: red;
+}
+.plus {
+  color: rgb(76, 231, 76);
+}
+.trash {
+  color: red;
+}
+.float-right {
+  float: right;
+}
+.card {
+  margin-top: 10px;
+  height: 290px;
+  width: 400px;
+  margin-left: 25px;
 }
 .button {
   background-color: white;
@@ -32,11 +42,11 @@
   font-size: 20px;
   outline: none;
   border-radius: 20px;
-  border: 2px solid red;
+  border: 2px solid rgb(104, 136, 241);
   transition: 0.4s;
   margin-bottom: 6px;
 }
 .button:hover {
-  background-color: red;
+  background-color: rgb(104, 136, 241);
   color: white;
 }

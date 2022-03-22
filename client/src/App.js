@@ -3,7 +3,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ErrorBoundary from "./components/ErrorHandler/ErrorBoundary";
 import Loading from "./media/Loading.gif";
-// import Menus from "./components/Menu/Menus";
+const Cart = React.lazy(() => import("./components/CartModule/Cart"));
 const Menus = React.lazy(() => import("./components/Menu/Menus"));
 const Dashboard = React.lazy(() => import("./components/Dashboard/Dashboard"));
 const Register = React.lazy(() => import("./components/Register/Register"));
@@ -14,8 +14,7 @@ const Introduction = React.lazy(() =>
 
 function App() {
   return (
-    // <ErrorBoundary>
-    
+    <ErrorBoundary>
       <Suspense
         fallback={
           <div className="background">
@@ -23,7 +22,6 @@ function App() {
           </div>
         }
       >
-        {/* <Menus/> */}
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Introduction />} />
@@ -31,10 +29,11 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/menu" element={<Menus />} />
+            <Route path="/cart" element={<Cart />} />
           </Routes>
         </BrowserRouter>
       </Suspense>
-    // </ErrorBoundary>
+    </ErrorBoundary>
   );
 }
 
