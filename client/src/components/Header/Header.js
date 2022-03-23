@@ -2,7 +2,7 @@ import React,{useState,useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux"
 import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { useNavigate } from "react-router";
-import { FaSignInAlt, FaSignOutAlt } from "react-icons/fa";
+import { FaSignInAlt, FaSignOutAlt,FaBorderNone } from "react-icons/fa";
 import { getProfile } from "../../config/Myservices";
 import { MdAssignment } from "react-icons/md";
 import {BsFillCartPlusFill} from 'react-icons/bs'
@@ -73,6 +73,13 @@ function Header() {
                 title={user.firstname}
                 className="nav-dropdown"
               >
+                <NavDropdown.Item href="/order">
+                  <b> My Orders </b>
+                  <span className="nav-item">
+                    <FaBorderNone />
+                  </span>
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
                 <NavDropdown.Item
                   onClick={(e) => {
                     logout(e);

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Card,Button,Alert } from "react-bootstrap";
 import Header from "../Header/Header";
 import { useSelector, useDispatch } from "react-redux";
 import { AiOutlinePlusSquare, AiOutlineMinusSquare } from "react-icons/ai";
@@ -19,14 +19,23 @@ function Cart() {
     <div className="background">
       <Header />
       <Container>
+        {cartItems.length !== 0 ? (
         <Row>
           <Col md={8}>
             <h1 className="heading">My Cart</h1>
             <hr />
             {cartItems.map((item) => {
               return (
-                <div className="d-flex ">
-                  <div className="display w-100 ">
+                <div className="d-flex card-box" >
+                   <div className=" w-100 ">
+                    <img
+                      className="image"
+                      src={item.Image}
+                      height="100px"
+                      width="100px"
+                    />
+                  </div>
+                  <div className="display-details w-100 ">
                     <h5>{item.Name}</h5>
                     <h5>
                       Price : {item.Quantity} * {item.Price} = {item.TotalPrice}{" "}
@@ -47,22 +56,14 @@ function Cart() {
                         }}
                       />
                     </h5>
-                    <hr />
                   </div>
-                  <div className=" w-100 ">
-                    <img
-                      className="float-right"
-                      src={item.Image}
-                      height="100px"
-                      width="100px"
-                    />
-                  </div>
-                  <div className=" w-100 float-right">
+                  <div className=" w-100 float-right ">
                     <FaTrashAlt
                       className="trash mt-5 float-right"
                       onClick={() => dispatch(deleteFromCart(item))}
                     />
                   </div>
+                    <hr />
                 </div>
               );
             })}
@@ -83,6 +84,17 @@ function Cart() {
             </Card>
           </Col>
         </Row>
+        ):(
+      <>
+      <div className="error-message">
+      <Alert variant="danger" className="alert">Your Cart is Empty !</Alert>
+      <h3></h3> <br />
+            <Button variant="danger" href="menu">
+              Order Now
+            </Button>
+            </div><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      </>
+        )}
       </Container>
     </div>
   );

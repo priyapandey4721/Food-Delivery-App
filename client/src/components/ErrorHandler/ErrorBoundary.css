@@ -2,15 +2,14 @@
   text-align: center;
   color: red;
 }
-.background {
+/* .background {
   background-image: url("../../media/background.jpg");
   min-height: 100%;
   min-width: 100%;
-  position: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 .error-message {
   margin: 0px auto;
   margin-top: 20%;

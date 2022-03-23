@@ -14,6 +14,10 @@
   float: left;
   margin: 10px;
 }
+.display-details {
+  margin-right: 15%;
+  margin-top: 1%;
+}
 .minus {
   color: red;
 }
@@ -22,6 +26,7 @@
 }
 .trash {
   color: red;
+  margin-right: 5%;
 }
 .float-right {
   float: right;
@@ -31,10 +36,13 @@
   height: 290px;
   width: 400px;
   margin-left: 25px;
+  border-radius: 20px;
+  border: 1px solid black;
 }
 .button {
   background-color: white;
-  margin: 0 auto;
+  margin: 0px auto;
+  margin-left: 30%;
   width: 150px;
   color: black;
   text-align: center;
@@ -49,4 +57,23 @@
 .button:hover {
   background-color: rgb(104, 136, 241);
   color: white;
+}
+.image {
+  margin-top: 6%;
+  margin-left: 12%;
+}
+.card-box {
+  background-color: whitesmoke;
+  margin-top: 3px;
+  height: 130px;
+  width: 770px;
+  /* margin-left: 10%; */
+  border: 0.5px solid black;
+  /* padding: 1%; */
+  /* margin-left: 25px; */
+  border-radius: 20px;
+}
+.error-message {
+  margin: 0px auto;
+  margin-top: 15%;
 }

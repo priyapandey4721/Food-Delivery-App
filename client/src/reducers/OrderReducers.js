@@ -1,4 +1,4 @@
-export const placeOrderReducer = (state = { menus: [] }, action) => {
+export const placeOrderReducer = (state = {  }, action) => {
   switch (action.type) {
     case "PLACE_ORDER_REQUEST":
       return {

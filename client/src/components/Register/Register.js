@@ -29,8 +29,8 @@ function Register() {
       if (res.data.err) {
         failure(res.data.err);
       } else {
-        alert(res.data.msg);
-        success("/login");
+        success(res.data.msg);
+        navigate("/login");
       }
     });
   };
