@@ -22,20 +22,28 @@ function Checkout({ grandtotal }) {
   const [showadd, setShowAdd] = useState(false);
   const handleCloseAdd = () => setShowAdd(false);
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
   const [streetname, setStreetName] = useState("");
   const [city, setCity] = useState("");
   const [state, setState] = useState("");
   const [country, setCountry] = useState("");
   const [cartitems, setCartItems] = useState([]);
   const navigate = useNavigate();
-  const dispatch = useDispatch();
-  // function tokenHandler(token) {
-  //   console.log(token);
-  //   dispatch(placeOrder(token, grandtotal));
-  // }
   const email = sessionStorage.getItem("user");
+  const handleShow = () => {
+    if (sessionStorage.getItem("user") == undefined) {
+      failure("Login is Required");
+      navigate("/login");
+      setShow(false);
+    } else {
+      setShow(true);
+    }
+  };
   useEffect(() => {
+    if (sessionStorage.getItem("user") === undefined) {
+      failure("Login is Required");
+      navigate("/login");
+      setShow(false);
+    }
     const cartItems = JSON.parse(localStorage.getItem("cartItems"));
     setCartItems(cartItems);
   }, []);
@@ -61,16 +69,16 @@ function Checkout({ grandtotal }) {
       state: state,
       country: country,
     };
-    placeOrders(data)
-    .then((res,err)=>{
-      if(res.data.err){
+    placeOrders(data).then((res, err) => {
+      if (res.data.err) {
         failure(res.data.err);
-      }else{
-        localStorage.removeItem("cartItems")
+      } else {
+        localStorage.removeItem("cartItems");
         success(res.data.msg);
-        navigate("/order")
+        navigate("/order");
+        window.location.reload();
       }
-    })
+    });
   };
   return (
     <div>

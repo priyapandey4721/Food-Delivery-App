@@ -15,10 +15,10 @@ const UserRouter = require("./routes/UserRoutes");
 app.use("/api/fooddelivery", UserRouter);
 
 const MenuRouter = require("./routes/MenuRoutes");
-app.use("/api/fooddelivery", MenuRouter)
+app.use("/api/fooddelivery", MenuRouter);
 
 const OrderRouter = require("./routes/OrderRoutes");
-app.use("/api/fooddelivery",OrderRouter)
+app.use("/api/fooddelivery", OrderRouter);
 
 app.listen(port, (err) => {
   if (err) throw err;

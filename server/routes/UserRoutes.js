@@ -2,7 +2,6 @@ const express = require("express");
 const router = require("express").Router();
 const UserControllers = require("../controllers/UserControllers");
 const UserValidation = require("../middleware/Validation");
-const authenticateToken = require("../middleware/Authentication");
 const path = require("path");
 const multer = require("multer");
 router.use(express.json());
@@ -31,14 +30,7 @@ router.post(
   UserValidation.validRegister,
   UserControllers.register
 );
-router.post(
-  "/login",
-  UserValidation.validLogin,
-  UserControllers.login
-);
-router.get(
-  "/getprofile/:email",
-  UserControllers.getprofile
-)
+router.post("/login", UserValidation.validLogin, UserControllers.login);
+router.get("/getprofile/:email", UserControllers.getprofile);
 
 module.exports = router;

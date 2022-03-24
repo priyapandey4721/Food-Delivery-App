@@ -4,7 +4,6 @@ const jwt = require("jsonwebtoken");
 const jwtSecret = `${process.env.JWT_SECRET_KEY}`;
 const UserControllers = {
   register: async (req, res) => {
-    console.log(req.body);
     let firstname = req.body.firstname;
     let lastname = req.body.lastname;
     let email = req.body.email;
@@ -24,7 +23,7 @@ const UserControllers = {
     } else {
       ins.save((err) => {
         if (err) {
-          console.log({ err: "All Fields are Required" });
+          throw err
         } else {
           res.send({ msg: "Registered Successfully" });
         }
@@ -34,27 +33,26 @@ const UserControllers = {
   login: async (req, res) => {
     let email = req.body.email;
     let password = req.body.password;
-    const data = await userModel.findOne({email:email});
-    if(data){
-      const validPassword = await bcrypt.compare(password,data.password);
-      if(validPassword){
-        let payload = {uid:email};
-        const token = jwt.sign(payload,jwtSecret,{expiresIn:360000})
-        res.send({msg:"Login Successful",token:token,data:data});
-      }else{
-        res.send({err:"Password doesn't match"});
+    const data = await userModel.findOne({ email: email });
+    if (data) {
+      const validPassword = await bcrypt.compare(password, data.password);
+      if (validPassword) {
+        let payload = { uid: email };
+        const token = jwt.sign(payload, jwtSecret, { expiresIn: 360000 });
+        res.send({ msg: "Login Successful", token: token, data: data });
+      } else {
+        res.send({ err: "Password doesn't match" });
       }
-    }else{
-      res.send({err:"User Not Registered"})
+    } else {
+      res.send({ err: "User Not Registered" });
     }
   },
-  getprofile:async(req,res)=>{
+  getprofile: async (req, res) => {
     let email = req.params.email;
-    userModel.findOne({email:email},(err,data)=>{
-      if(err) res.json({err:err})
-      res.json({user:data});
-    })
-  }
+    userModel.findOne({ email: email }, (err, data) => {
+      if (err) res.json({ err: err });
+      res.json({ user: data });
+    });
+  },
 };
 module.exports = UserControllers;
-

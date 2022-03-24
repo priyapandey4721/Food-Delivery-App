@@ -2,14 +2,14 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import "./Introduction.css";
 import logo from "../../media/logo.png";
-import {useNavigate} from 'react-router'
+import { useNavigate } from "react-router";
 function Introduction() {
-  const navigate = useNavigate()
-  const navigatetologin =()=>{
-    navigate("/login")
-  }
+  const navigate = useNavigate();
+  const navigatetologin = () => {
+    navigate("/login");
+  };
   return (
-    <div className="background">
+    <div >
       <Card className="card">
         <img className="card-image" variant="top" src={logo} />
         <Card.Body>

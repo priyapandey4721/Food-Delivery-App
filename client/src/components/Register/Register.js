@@ -9,8 +9,10 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 toast.configure();
 function Register() {
-  const success = (data) => toast.success(data, { position: toast.POSITION.TOP_CENTER });
-  const failure = (data) => toast.error(data, { position: toast.POSITION.TOP_CENTER });
+  const success = (data) =>
+    toast.success(data, { position: toast.POSITION.TOP_CENTER });
+  const failure = (data) =>
+    toast.error(data, { position: toast.POSITION.TOP_CENTER });
   const navigate = useNavigate();
   let [firstname, setFirstname] = useState("");
   let [lastname, setLastname] = useState("");
@@ -46,11 +48,7 @@ function Register() {
           <hr />
           <Card.Text>
             <Form>
-              <Form.Group
-                className="mb-3 input-field"
-                controlId="formBasicEmail"
-              >
-                <Form.Label>First Name</Form.Label>
+              <Form.Group className="mb-3 input-field">
                 <Form.Control
                   type="text"
                   placeholder="Enter First Name"
@@ -60,11 +58,7 @@ function Register() {
                   }}
                 />
               </Form.Group>
-              <Form.Group
-                className="mb-3 input-field"
-                controlId="formBasicEmail"
-              >
-                <Form.Label>Last Name</Form.Label>
+              <Form.Group className="mb-3 input-field">
                 <Form.Control
                   type="text"
                   placeholder="Enter Last Name"
@@ -74,40 +68,27 @@ function Register() {
                   }}
                 />
               </Form.Group>
-              <Form.Group
-                className="mb-3 input-field"
-                controlId="formBasicEmail"
-              >
-                <Form.Label>Email address</Form.Label>
+              <Form.Group className="mb-3 input-field">
                 <Form.Control
                   type="email"
-                  placeholder="Enter email"
+                  placeholder="Enter Email"
                   name="email"
                   onChange={(e) => {
                     setEmail(e.target.value);
                   }}
                 />
               </Form.Group>
-
-              <Form.Group
-                className="mb-3 input-field"
-                controlId="formBasicPassword"
-              >
-                <Form.Label>Password</Form.Label>
+              <Form.Group className="mb-3 input-field">
                 <Form.Control
                   type="password"
-                  placeholder="Password"
+                  placeholder="Enter Password"
                   name="password"
                   onChange={(e) => {
                     setPassword(e.target.value);
                   }}
                 />
               </Form.Group>
-              <Form.Group
-                className="mb-3 input-field"
-                controlId="formBasicEmail"
-              >
-                <Form.Label>Profile</Form.Label>
+              <Form.Group className="mb-3 input-field">
                 <Form.Control
                   type="file"
                   name="profile"

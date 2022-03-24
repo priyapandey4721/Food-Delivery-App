@@ -2,121 +2,145 @@
   {
     "Name": "Classic Chicken Roll in Naan",
     "Price": "150",
-    "Image": "https://b.zmtcdn.com/data/dish_photos/3f2/4a6d5e9e293b706a77cfe7833617b3f2.jpg?fit=around|130:130&crop=130:130;*,*"
+    "Image": "https://b.zmtcdn.com/data/dish_photos/3f2/4a6d5e9e293b706a77cfe7833617b3f2.jpg?fit=around|130:130&crop=130:130;*,*",
+    "Description": "Crowd-pleaser for a reason! With shredded pieces of chicken in it; we've never met a gravy tastier than this one!"
   },
   {
     "Name": "Veg Schezwan Roll In Naan",
     "Price": "140",
-    "Image": "https://b.zmtcdn.com/data/dish_photos/d5f/0f9dfca71a48fcfa1b053e1881217d5f.jpg?fit=around|130:130&crop=130:130;*,*"
+    "Image": "https://b.zmtcdn.com/data/dish_photos/d5f/0f9dfca71a48fcfa1b053e1881217d5f.jpg?fit=around|130:130&crop=130:130;*,*",
+    "Description": "A wickedly spicy Indo-Chinese variant. CAUTION: Hot To Handle"
   },
   {
     "Name": "Tawa Chicken Roll In Naan",
     "Price": "160",
-    "Image": "https://b.zmtcdn.com/data/dish_photos/6ad/e69ba55a3a230f2549ff6ec65052e6ad.jpg?fit=around|130:130&crop=130:130;*,*"
+    "Image": "https://b.zmtcdn.com/data/dish_photos/6ad/e69ba55a3a230f2549ff6ec65052e6ad.jpg?fit=around|130:130&crop=130:130;*,*",
+    "Description": "Dil se North-Indian! Succulent chicken infused with authentic Punjabi masalas; khakar dil bole Hadippa!"
   },
   {
     "Name": "Veg Cheesy Jalapeño",
     "Price": "140",
-    "Image": "https://b.zmtcdn.com/data/dish_photos/b18/10ffd8687fe5b7bbc09e27e18fb38b18.jpg?fit=around|130:130&crop=130:130;*,*"
+    "Image": "https://b.zmtcdn.com/data/dish_photos/b18/10ffd8687fe5b7bbc09e27e18fb38b18.jpg?fit=around|130:130&crop=130:130;*,*",
+    "Description": "Aloo patty rolled with love and sauced up with the classic cheesy jalapeño sauce to have you savour every bite!"
   },
   {
     "Name": "McSpicy Chicken Burger",
     "Price": "165",
-    "Image": "https://b.zmtcdn.com/data/dish_photos/b46/4d80614e25ce5cba74cbe2670fa93b46.png?fit=around|130:130&crop=130:130;*,*"
+    "Image": "https://b.zmtcdn.com/data/dish_photos/b46/4d80614e25ce5cba74cbe2670fa93b46.png?fit=around|130:130&crop=130:130;*,*",
+    "Description": "Tender and juicy chicken patty coated in spicy, crispy batter topped with a creamy sauce and crispy shredded lettuce will have you craving for more."
   },
   {
     "Name": "American Cheese Supreme - Veg",
     "Price": "125",
-    "Image": "https://b.zmtcdn.com/data/dish_photos/fae/57d279457dbd8e2070becfb932a79fae.jpg?fit=around|130:130&crop=130:130;*,*"
+    "Image": "https://b.zmtcdn.com/data/dish_photos/fae/57d279457dbd8e2070becfb932a79fae.jpg?fit=around|130:130&crop=130:130;*,*",
+    "Description": "A burger with crispy corn and cheese patty covered with a slice of cheese, creamy cocktail sauce, jalapeos and shredded onions."
   },
   {
     "Name": "McVeggie Burger",
     "Price": "115",
-    "Image": "https://b.zmtcdn.com/data/dish_photos/511/4f4aed59ea6e2df22e23c7f36fcca511.jpg?fit=around|130:130&crop=130:130;*,*"
+    "Image": "https://b.zmtcdn.com/data/dish_photos/511/4f4aed59ea6e2df22e23c7f36fcca511.jpg?fit=around|130:130&crop=130:130;*,*",
+    "Description": "An everyday classic burger with a delectable patty filled with potatoes, carrots and tasty Indian spices; topped with crunchy lettuce and mayonaise."
   },
   {
     "Name": "McChicken Burger",
     "Price": "120",
-    "Image": "https://b.zmtcdn.com/data/dish_photos/d38/393e496be8ec0d7b6006c4f33869cd38.png?fit=around|130:130&crop=130:130;*,*"
+    "Image": "https://b.zmtcdn.com/data/dish_photos/d38/393e496be8ec0d7b6006c4f33869cd38.png?fit=around|130:130&crop=130:130;*,*",
+    "Description": "Tender and juicy chicken patty cooked to perfection, with creamy mayonnaise and crunchy lettuce adding flavour to each bite."
   },
   {
     "Name": "Family Treat BBQ Delight Chicken Pizza Meal",
     "Price": "670",
-    "Image": "https://b.zmtcdn.com/data/dish_photos/306/4084273933bacd5581d26ccd07244306.jpg?fit=around|130:130&crop=130:130;*,*"
+    "Image": "https://b.zmtcdn.com/data/dish_photos/306/4084273933bacd5581d26ccd07244306.jpg?fit=around|130:130&crop=130:130;*,*",
+    "Description": "Double pepper barbecue chicken, golden corn and extra cheese, true delight"
   },
   {
     "Name": "Family Treat Gracy Italian Pizza Meal",
     "Price": "700",
-    "Image": "https://b.zmtcdn.com/data/dish_photos/942/9f88004447c1321a5ca07d2e14dc3942.jpg?fit=around|130:130&crop=130:130;*,*"
+    "Image": "https://b.zmtcdn.com/data/dish_photos/942/9f88004447c1321a5ca07d2e14dc3942.jpg?fit=around|130:130&crop=130:130;*,*",
+    "Description": "It is hot. It is spicy. It is oh-so-Indian. Tandoori paneer with capsicum, ... read more"
   },
   {
     "Name": "Cheese with Corn Pizza",
     "Price": "190",
-    "Image": "https://b.zmtcdn.com/data/dish_photos/2bf/d5df8f0fe0923072055f17836e48e2bf.jpg?fit=around|130:130&crop=130:130;*,*"
+    "Image": "https://b.zmtcdn.com/data/dish_photos/2bf/d5df8f0fe0923072055f17836e48e2bf.jpg?fit=around|130:130&crop=130:130;*,*",
+    "Description": "Sweet & juicy golden corn for that lipsmacking taste"
   },
   {
     "Name": "Hot Chicken Pizza",
     "Price": "270",
-    "Image": "https://b.zmtcdn.com/data/dish_photos/5d8/8c4e95afa7563d0b591ed001d332a5d8.jpg?fit=around|130:130&crop=130:130;*,*"
+    "Image": "https://b.zmtcdn.com/data/dish_photos/5d8/8c4e95afa7563d0b591ed001d332a5d8.jpg?fit=around|130:130&crop=130:130;*,*",
+    "Description": "Chicken sausage, pepper barbecue chicken & peri-peri chicken in a fresh pan crust"
   },
   {
     "Name": "Veg Cheese Grilled Sandwich",
     "Price": "169",
-    "Image": "https://b.zmtcdn.com/data/dish_photos/fd2/89d73d7567b8ba005e0075810bb6bfd2.jpg?fit=around|130:130&crop=130:130;*,*"
+    "Image": "https://b.zmtcdn.com/data/dish_photos/fd2/89d73d7567b8ba005e0075810bb6bfd2.jpg?fit=around|130:130&crop=130:130;*,*",
+    "Description": "[Square Jumbo Bread, Amul Butter, Green Chutney, Fresh Sliced Vegetables (Cucumber, Boiled Potatoes, Tomatoes, Boiled Beetroot, Onion) & Spicezzaa's Sandwich Masala.]"
   },
   {
     "Name": "Chocolate Toast Sandwich",
     "Price": "105",
-    "Image": "https://b.zmtcdn.com/data/dish_photos/644/bffbb0be72036e7ff4bbaf9b226db644.jpg?fit=around|130:130&crop=130:130;*,*"
+    "Image": "https://b.zmtcdn.com/data/dish_photos/644/bffbb0be72036e7ff4bbaf9b226db644.jpg?fit=around|130:130&crop=130:130;*,*",
+    "Description": "[Square Bread, Amul Butter, Chocolate Fudge Spread & Walnuts.]"
   },
   {
     "Name": "Veg Grilled Sandwich",
     "Price": "143",
-    "Image": "https://b.zmtcdn.com/data/dish_photos/967/a9ca7eaab1c245af6afe5cee6b37f967.jpg?fit=around|130:130&crop=130:130;*,*"
+    "Image": "https://b.zmtcdn.com/data/dish_photos/967/a9ca7eaab1c245af6afe5cee6b37f967.jpg?fit=around|130:130&crop=130:130;*,*",
+    "Description": "[Triangle Bread, Amul Butter, Green Chutney, Fresh Sliced Vegetables (Cucumber, Tomato), Boiled Potato Slices, Chopped Onions & Green Bell Pepper & Spicezzaa's Sandwich Masala.]"
   },
   {
     "Name": "Paneer Mayo Cheese Grilled Sandwich",
     "Price": "208",
-    "Image": "https://b.zmtcdn.com/data/dish_photos/b56/8a0287f260729cdd8d75a5c2a70fcb56.jpg?fit=around|130:130&crop=130:130;*,*"
+    "Image": "https://b.zmtcdn.com/data/dish_photos/b56/8a0287f260729cdd8d75a5c2a70fcb56.jpg?fit=around|130:130&crop=130:130;*,*",
+    "Description": "[Square Bread, Vegi Mayo Stuffing (Finely Diced Vegetables, Veg Mayonnaise & Cheese), Spicezzaa's Sandwich Masala.]"
   },
   {
     "Name": "Oreo Cake",
     "Price": "450",
-    "Image": "https://b.zmtcdn.com/data/dish_photos/043/530d1684def6bf5325c6116c2542c043.jpg?fit=around|130:130&crop=130:130;*,*"
+    "Image": "https://b.zmtcdn.com/data/dish_photos/043/530d1684def6bf5325c6116c2542c043.jpg?fit=around|130:130&crop=130:130;*,*",
+    "Description": "Moist chocolate cake with chocolate flakes and oreo crunches."
   },
   {
     "Name": "Choco Gooey Cake",
     "Price": "350",
-    "Image": "https://b.zmtcdn.com/data/dish_photos/829/ed23b238137a60b4bc9be73d423d7829.jpg?fit=around|130:130&crop=130:130;*,*"
+    "Image": "https://b.zmtcdn.com/data/dish_photos/829/ed23b238137a60b4bc9be73d423d7829.jpg?fit=around|130:130&crop=130:130;*,*",
+    "Description": "Plain chocolate cake with unique tasty balanced chocolate ganache."
   },
   {
     "Name": "Swiss Truffle Cake",
     "Price": "350",
-    "Image": "https://b.zmtcdn.com/data/dish_photos/3b4/cf11e419deb2fd271a11594be00443b4.jpg?fit=around|130:130&crop=130:130;*,*"
+    "Image": "https://b.zmtcdn.com/data/dish_photos/3b4/cf11e419deb2fd271a11594be00443b4.jpg?fit=around|130:130&crop=130:130;*,*",
+    "Description": "Rich chocolate with butterscotch and cappuccino."
   },
   {
     "Name": "Rasmalai Cake",
     "Price": "500",
-    "Image": "https://b.zmtcdn.com/data/dish_photos/4a9/43e0815c82a4088bf96ac64884db04a9.jpg?fit=around|130:130&crop=130:130;*,*"
+    "Image": "https://b.zmtcdn.com/data/dish_photos/4a9/43e0815c82a4088bf96ac64884db04a9.jpg?fit=around|130:130&crop=130:130;*,*",
+    "Description": "Our most popular fusion cake has layers filled with Rasmali and pistachios, along with condensed milk to give it the perfect festive flavour."
   },
   {
     "Name": "Paneer Tikka Matka Biryani",
     "Price": "422",
-    "Image": "https://b.zmtcdn.com/data/dish_photos/0f1/ce17a8a1e0ab5ee90787784e36f8f0f1.jpg?fit=around|130:130&crop=130:130;*,*"
+    "Image": "https://b.zmtcdn.com/data/dish_photos/0f1/ce17a8a1e0ab5ee90787784e36f8f0f1.jpg?fit=around|130:130&crop=130:130;*,*",
+    "Description": "[Accompanied by Onion Raita, Chocolate Paan Jr in a hygienic packaging], (550 Gms), [Spicy] Fresh malai paneer dum cooked with basmati rice along with a smokey, tangy and spicy chatpata gravy."
   },
   {
     "Name": "Nawabi Paneer Matka Biryani",
     "Price": "422",
-    "Image": "https://b.zmtcdn.com/data/dish_photos/e10/c8a9df6051dea84a9233d83a6a364e10.jpg?fit=around|130:130&crop=130:130;*,*"
+    "Image": "https://b.zmtcdn.com/data/dish_photos/e10/c8a9df6051dea84a9233d83a6a364e10.jpg?fit=around|130:130&crop=130:130;*,*",
+    "Description": "[Accompanied by Onion Raita, Chocolate Paan Jr in a hygienic packaging], (550 Gms), [Spicy] Fresh malai paneer dum cooked with basmati rice along with a smokey, tangy and spicy chatpata gravy."
   },
   {
     "Name": "Chicken Tikka Matka Biryani",
     "Price": "426",
-    "Image": "https://b.zmtcdn.com/data/dish_photos/de2/ee518139da577f117ad3d23c87628de2.jpg?fit=around|130:130&crop=130:130;*,*"
+    "Image": "https://b.zmtcdn.com/data/dish_photos/de2/ee518139da577f117ad3d23c87628de2.jpg?fit=around|130:130&crop=130:130;*,*",
+    "Description": "[Accompanied by Onion Raita, Chocolate Paan Jr in a hygienic packaging], (550 Gms), [Medium Spiced] Tandoori chicken tikka Dum "
   },
   {
     "Name": "Chicken Dum Matka Biryani",
     "Price": "418",
-    "Image": "https://b.zmtcdn.com/data/dish_photos/404/a79c3b26cd47b07316590c08703a9404.jpg?fit=around|130:130&crop=130:130;*,*"
+    "Image": "https://b.zmtcdn.com/data/dish_photos/404/a79c3b26cd47b07316590c08703a9404.jpg?fit=around|130:130&crop=130:130;*,*",
+    "Description": "[Accompanied by 2 Onion Raita, 2 Chocolate Paan Jr in a hygienic packaging], (1100 Gms), [Medium Spiced] Marinated chicken Dum cooked with basmati rice and our version of a rich Awadhi gravy which has over a dozen spices"
   }
 ]

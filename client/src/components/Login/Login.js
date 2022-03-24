@@ -27,6 +27,7 @@ function Login() {
       if (res.data.err) {
         failure(res.data.err);
         navigate("/login");
+        window.location.reload();
       } else {
         success(res.data.msg);
         sessionStorage.setItem("_token", res.data.token);
@@ -47,42 +48,27 @@ function Login() {
           <hr />
           <Card.Text>
             <Form>
-              <Form.Group
-                className="mb-3 input-field"
-                controlId="formBasicEmail"
-              >
-                <Form.Label>Email address</Form.Label>
+              <Form.Group className="mb-3 input-field">
                 <Form.Control
                   type="email"
-                  placeholder="Enter email"
+                  placeholder="Enter Email"
                   onChange={(e) => {
                     setEmail(e.target.value);
                   }}
                 />
               </Form.Group>
-
-              <Form.Group
-                className="mb-3 input-field"
-                controlId="formBasicPassword"
-              >
-                <Form.Label>Password</Form.Label>
+              <Form.Group className="mb-3 input-field">
                 <Form.Control
                   type={passwordShown ? "text" : "password"}
-                  placeholder="Password"
+                  placeholder="Enter Password"
                   onChange={(e) => {
                     setPassword(e.target.value);
                   }}
                 />
               </Form.Group>
-              <Form.Group
-                className="mb-3 input-field"
-                controlId="formBasicPassword"
-              >
+              <Form.Group className="mb-3 input-field">
                 <input type="checkbox" onClick={togglePassword} /> Show Password
               </Form.Group>
-              {/* <Form.Group className="mb-3 input-field" controlId="formBasicPassword">
-              <a href="/forgotpassword" className="href-link">Forgot Password? </a>
-              </Form.Group> */}
               <button className="button" type="submit" onClick={login}>
                 Sign In <span>{">>>"}</span>
               </button>

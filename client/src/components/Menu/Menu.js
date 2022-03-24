@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { cartAdd } from "../../config/Myservices";
+import { useDispatch } from "react-redux";
 import { Card, Modal } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
 import { IoAddSharp } from "react-icons/io5";
 import "./Menu.css";
 import { toast } from "react-toastify";
@@ -10,19 +8,16 @@ import "react-toastify/dist/ReactToastify.css";
 import { addToCart } from "../../actions/CartActions";
 toast.configure();
 function Menu({ item }) {
-  const email = sessionStorage.getItem("user");
   const success = (data) =>
     toast.success(data, { position: toast.POSITION.TOP_CENTER });
-  const failure = (data) =>
-    toast.error(data, { position: toast.POSITION.TOP_CENTER });
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const dispatch = useDispatch();
-  const navigate = useNavigate();
-  const [Quantity,setQuantity] = useState(1)
+  const [Quantity, setQuantity] = useState(1);
   function addCart() {
     dispatch(addToCart(item, Quantity));
+    success("Item added to cart");
   }
   return (
     <>
@@ -39,26 +34,28 @@ function Menu({ item }) {
           <Card.Title>{item.Name}</Card.Title>
           <Card.Text>
             <div className="d-flex">
-            <div className="w-100">
-              <h5>Price  : <br/>Rs. {item.Price}</h5>
-            </div>
-            <div className="">
-              <h5 >Quantity </h5>
-              <select value={Quantity} onChange={(e)=>{setQuantity(e.target.value)}}>
-                {[...Array(10).keys()].map((x, i)=>{
-                  return <option value={i+1}>{i+1}</option>
-                })}
-              </select>
-            </div>
+              <div className="w-100">
+                <h5>
+                  Price : <br />
+                  Rs. {item.Price}
+                </h5>
+              </div>
+              <div className="">
+                <h5>Quantity </h5>
+                <select
+                  value={Quantity}
+                  onChange={(e) => {
+                    setQuantity(e.target.value);
+                  }}
+                >
+                  {[...Array(10).keys()].map((x, i) => {
+                    return <option value={i + 1}>{i + 1}</option>;
+                  })}
+                </select>
+              </div>
             </div>
           </Card.Text>
-          <button
-            className="button"
-            variant="primary"
-            onClick={() => {
-              addCart();
-            }}
-          >
+          <button className="button" variant="primary" onClick={addCart}>
             Add <IoAddSharp />
           </button>
         </Card.Body>
@@ -74,7 +71,7 @@ function Menu({ item }) {
             className="modal-image"
             alt={"images"}
           />
-          <p>{item.description}</p>
+          <p>{item.Description}</p>
         </Modal.Body>
         <Modal.Footer>
           <button className="button" variant="secondary" onClick={handleClose}>

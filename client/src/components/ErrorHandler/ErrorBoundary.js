@@ -16,14 +16,13 @@ class ErrorBoundary extends Component {
   render() {
     if (this.state.hasError) {
       return (
-        <div >
-          <div className="error-message">
-            <Alert variant="danger" className="alert">Login is Required !</Alert>
-            <a href="/login">
-              <br/>
-              <button className="button">Go Back {"<<"} </button>
-            </a><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-          </div>
+        <div className="error-message">
+          <Alert variant="danger" className="alert">
+            Login is Required !
+          </Alert>
+          <a href="/login">
+            <button className="button">Go Back {"<<"} </button>
+          </a>
         </div>
       );
     }

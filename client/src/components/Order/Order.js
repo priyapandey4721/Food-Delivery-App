@@ -1,65 +1,88 @@
-import React,{useState,useEffect}  from 'react'
-import Header from "../Header/Header"
-import {Row,Col, Container} from 'react-bootstrap';
-import {getOrder} from "../../config/Myservices"
-import "./Order.css"
+import React, { useState, useEffect } from "react";
+import Header from "../Header/Header";
+import { Row, Col, Container } from "react-bootstrap";
+import { getOrder } from "../../config/Myservices";
+import moment from "moment";
+import "./Order.css";
 function Order() {
-    let [order,setOrder] = useState([]);
-    useEffect(()=>{
-      getOrder(sessionStorage.getItem("user"))
-      .then(res=>{
-        if(res.data.user){
-          let data=res.data.user;
-          setOrder(data)
-        }else{
-          console.log(res.data.err)
-        }
-      })
-    },[])
-    console.log(order)
+  let [order, setOrder] = useState([]);
+  useEffect(() => {
+    getOrder(sessionStorage.getItem("user")).then((res) => {
+      if (res.data.user) {
+        let data = res.data.user;
+        setOrder(data);
+      } else {
+      }
+    });
+  }, []);
   return (
-    <div className='background'>
-        <Header/>
-        {order.map((value,index)=>{
-          return (
-            <>
+    <div className="background">
+      <Header />
+      {order.map((value, index) => {
+        return (
+          <p key={index}>
             <Container>
-            <div className='order'>
+              <div className="order">
                 <Row>
-                    <Col style={{ color: 'white' }}>
-                        <ul className='list-unstyled'><h4>About Company</h4>
-                            <li>NeoSOFT Technologies is here at your quick and easy service for Shopping</li>
-                            <li>Contact Information</li>
-                            <li>Email : contact@neosofttech.com</li>
-                            <li>Phone : +91 0000000000</li>
-                            <li>Mumbai, India</li>
-                        </ul>
-                    </Col>
-                    <Col style={{ color: 'white' }}>
-                        <ul className='list-unstyled'><h4>Order Placed At</h4>
-                            <li>{value.streetName}</li>
-                            <li>{value.city}</li>
-                            <li>{value.state}</li>
-                            <li>{value.country}</li>
-                        </ul>
-                    </Col>
-                    <Col style={{ color: 'white' }}>
-                        <ul className='list-unstyled'><h4>News Letter</h4>
-                            <li>Signup to get exclusive offer from our favourite brands and to be sale up in the news</li><br />
-                            <li></li>
-                            <br />
-                            <li></li>
-                        </ul>
-                    </Col>
+                  <ul className="list-unstyled">
+                    <tr>
+                      <td className="order-time">
+                        <li>
+                          <h6>ORDER PLACED</h6>
+                        </li>
+                        <li>
+                          <h6>{moment(value.createdAt).calendar()}</h6>
+                        </li>
+                      </td>
+                      <td className="order-time">
+                        <li>
+                          <h6>TOTAL AMOUNT</h6>
+                        </li>
+                        <li>
+                          <h6>&#8377;{value.orderAmount}</h6>
+                        </li>
+                      </td>
+                      <td className="order-time">
+                        <li>
+                          <h6>SHIP TO</h6>
+                        </li>
+                        <li>
+                          {value.streetName}, {value.city}, {value.state},<br />{" "}
+                          {value.country}
+                        </li>
+                      </td>
+                    </tr>
+                  </ul>
+                  <hr />
+                  <Col style={{ color: "black" }}>
+                    <ul className="list-unstyled">
+                      {order[index].orderItems.map((val, index) => {
+                        return (
+                          <tr key={index}>
+                            <td>
+                              <img src={val.Image} className="image" />
+                            </td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <tr>
+                              {val.Name} , {val.Quantity} * {val.Price}
+                            </tr>
+                            <tr>Price : {val.TotalPrice}</tr>
+                            <hr />
+                          </tr>
+                        );
+                      })}
+                    </ul>
+                  </Col>
+                  <hr />
                 </Row>
-                <h5 class="date">Order Placed on : {value.createdAt}</h5>
-            </div>
+                <h5 class="date">Order Food Again With Us Thank You !</h5>
+              </div>
             </Container>
-            </>
-          )
-        })}
+          </p>
+        );
+      })}
     </div>
-  )
+  );
 }
 
-export default Order
+export default Order;

@@ -1,11 +1,3 @@
-.background {
-  background-image: url("../../media/background.jpg");
-  min-height: 100%;
-  min-width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .register-card {
   width: 400px;
   margin: 0 auto;
@@ -13,6 +5,7 @@
   margin-top: 3%;
   text-align: center;
   border: 1px solid black;
+  margin-bottom: 4%;
 }
 .register-title {
   text-align: center;

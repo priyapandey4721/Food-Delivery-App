@@ -1,5 +1,4 @@
 const Joi = require("joi");
-
 const userValidation = {
   validRegister: (req, res, next) => {
     const schema = Joi.object().keys({
